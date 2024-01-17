@@ -1,6 +1,6 @@
 import { sql } from '@vercel/postgres';
  
-export default async function handler(res, req){
+export default async function handler(req, res){
     try {
         const result =
         // Tagged template literal

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "vercel": "C:\\Users\\svensxia\\AppData\\Roaming\\npm\\vercel.cmd"
+    "vercel": "C:\\Users\\%username%\\AppData\\Roaming\\npm\\vercel.cmd"
   },
   "author": "",
   "license": "ISC",

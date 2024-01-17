@@ -1,8 +1,8 @@
 import { sql } from "@vercel/postgres"
 
 export default async function handler(req, res){
-
-    if (req.method == "POST"){
+    //OBS ta bort 1==2 för att de ska funka sen
+    if ( 1==2 && req.method == "POST"){
         const {name, species, age} = req.body
 
         await sql `INSERT INTO pets (
