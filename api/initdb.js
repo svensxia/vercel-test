@@ -6,8 +6,8 @@ export default async function handler(res, req){
     // Tagged template literal
       await sql `CREATE TABLE IF NOT EXISTS pets (id serial, name varchar(255);`;
 
-    return response.status(200).json({ result });
+    return res.status(200).json({ result });
   } catch (error) {
-    return response.status(500).json({ error });
+    return res.status(500).json({ error });
   }
 }
