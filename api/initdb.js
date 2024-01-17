@@ -2,9 +2,9 @@ import { sql } from '@vercel/postgres';
  
 export default async function handler(req, res){
     try {
-        const result =
         // Tagged template literal
-        await sql `CREATE TABLE IF NOT EXISTS pets (id serial, name varchar;`;
+        
+        await sql `CREATE TABLE IF NOT EXISTS pets (id serial, name varchar);`;
         await sql `ALTER TABLE pets ADD COLUMN IF NOT EXISTS species varchar `;
         await sql `ALTER TABLE pets ADD COLUMN IF NOT EXISTS age numeric `;
 
