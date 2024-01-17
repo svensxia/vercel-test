@@ -1,0 +1,12 @@
+{
+  "name": "vercel-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "vercel": "C:\\Users\\svensxia\\AppData\\Roaming\\npm\\vercel.cmd"
+  },
+  "author": "",
+  "license": "ISC"
+}
