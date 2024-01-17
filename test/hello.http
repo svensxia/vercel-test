@@ -1,0 +1,13 @@
+@apiURL = http://localhost:3000
+
+GET {{apiURL}}/api/hello
+
+###
+POST {{apiURL}}/api/hello
+Content-Type: application/json
+
+{
+    "name": "pluto",
+    "species": "hund",
+    "age": 2
+}
