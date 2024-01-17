@@ -1,6 +1,7 @@
 # vercel-test
 
 ## NPM
+* npm i @vercel/postgres
 ### Vercel
 * git push and deploy
 * npm vercel dev (localhost)
