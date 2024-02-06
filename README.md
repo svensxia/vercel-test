@@ -23,3 +23,20 @@ vercel dev (devva lokalt, lite som  npm run dev med nodemon)
 git commit + push driftsätter
 Se: https://vercel.com/docs/functions/serverless-functions/quickstart 
 Problem med att köra vercel på Windows? Lägg till hela sökvägen under scripts i package.json, t.ex: 
+
+## Exempel: TAggen Template Literal
+```js
+function myFunc(foo, ...vals){
+	console.log(foo, vals);
+}
+
+foo = "Foo";
+bar = "Bar";
+
+myFunc(`Normal ${foo} bar: ${bar}`);
+
+//Tagged Template Literal
+myFunc `Tagged ${foo} bar: ${bar}`;
+
+
+```
