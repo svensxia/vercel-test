@@ -1,0 +1,12 @@
+@apiURL = http://localhost:3000
+
+GET {{apiURL}}/api/bikes
+
+###
+POST {{apiURL}}/api/bikes
+Content-Type: application/json
+
+{
+    "brand": "everest",
+    "price": "500"
+}

@@ -15,16 +15,16 @@ export default function handler(req, res) {
 }
 
 
-I VSCode-terminalen: 
-npm i -g vercel (endast första gången)
-vercel  (endast första gången, svara på frågorna)
-vercel dev (devva lokalt, lite som  npm run dev med nodemon)
-Öppna http://localhost:3000/api/hello i browsern!
-git commit + push driftsätter
-Se: https://vercel.com/docs/functions/serverless-functions/quickstart 
-Problem med att köra vercel på Windows? Lägg till hela sökvägen under scripts i package.json, t.ex: 
+### I VSCode-terminalen: 
+* npm i -g vercel (endast första gången)
+* vercel  (endast första gången, svara på frågorna)
+* vercel dev (devva lokalt, lite som  npm run dev med nodemon)
+* Öppna http://localhost:3000/api/hello i browsern!
+* git commit + push driftsätter
+* Se: https://vercel.com/docs/functions/serverless-functions/quickstart 
+*Problem med att köra vercel på Windows? Lägg till hela sökvägen under scripts i package.json, t.ex: 
 
-## Exempel: TAggen Template Literal
+## Exempel: Tagger Template Literal
 ```js
 function myFunc(foo, ...vals){
 	console.log(foo, vals);
@@ -40,3 +40,25 @@ myFunc `Tagged ${foo} bar: ${bar}`;
 
 
 ```
+
+### Swagger
+* TODO:
+	* Kolla på lektion 5 och fixa bikes.js
+	* generera swagger.yaml med chatgpt
+		* genereate a swagger spec for a rest api/bikes endpoint supporing methods GET, POST and
+		* create swagger spec based on the following rest client test
+		@apiURL = http://localhost:3000
+
+		GET {{apiURL}}/api/bikes
+		
+		###
+		POST {{apiURL}}/api/bikes
+		Content-Type: application/json
+
+		{
+			"brand": "everest",
+			"price": "500"
+		}
+			* unpgk link, sätt i index för att se swagger ui
+				* https://swagger.io/docs/open-source-tools/swagger-ui/usage/installation/
+			
