@@ -17,8 +17,7 @@ export default function handler(req, res) {
 
 ### I VSCode-terminalen: 
 * npm i -g vercel (endast första gången)
-* vercel  (endast första gången, svara på frågorna)
-* vercel dev (devva lokalt, lite som  npm run dev med nodemon)
+* npm run vercel dev (devva lokalt, lite som  npm run dev med nodemon)
 * Öppna http://localhost:3000/api/hello i browsern!
 * git commit + push driftsätter
 * Se: https://vercel.com/docs/functions/serverless-functions/quickstart 

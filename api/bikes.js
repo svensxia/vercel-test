@@ -11,14 +11,12 @@ export default async function handler(req, res){
                 { brand: "Crecent", price: 200},
                 { brand: "Toshiba", price: 450}
                 
-        ])
-    } 
+            ])
+        } 
     
     } catch (error) {
         res.json({error: error})
     }
-
-    const {rows} = await sql `SELECT * FROM pets`
 
     res.status(200).json({
         method: req.method,
